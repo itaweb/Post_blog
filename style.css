@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -26,8 +32,10 @@ h2 {
 
 .container {
   width: 1140px;
-  margin-left: auto;
+  /* margin-left: auto;
   margin-right: auto;
+  margin-top: 20px; */
+  margin: 20px auto 0 auto;
 }
 
 .main-text {
@@ -37,4 +45,47 @@ h2 {
 
 .author-text {
   font-size: 22px;
+  float: left;
+  margin: 35px 0 0 20px;
+}
+
+.blog-post {
+  width: 75%;
+  float: left;
+  padding-right: 30px;
+  position: relative;
+}
+
+.other-post {
+  width: 25%;
+  float: left;
+}
+
+.author-box {
+  padding-top: 20px;
+  border-top: 1px solid rgb(80, 80, 80);
+}
+
+.other {
+  margin-bottom: 40px;
+}
+
+.author-box img {
+  height: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-bottom: 50px;
+
+}
+
+.blog-post img {
+  height: 150px;
+  width: auto;
+  margin-bottom: 30px;
+}
+
+.date {
+  position: absolute;
+  top: 10px;
+  right: 30px;
 }
